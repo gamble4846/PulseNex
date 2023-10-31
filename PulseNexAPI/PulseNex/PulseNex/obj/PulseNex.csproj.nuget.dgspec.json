@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\PulseNex\\PulseNexAPI\\PulseNex\\PulseNex\\PulseNex.csproj": {}
+    "D:\\Git Projects\\My Projects\\PulseNex\\PulseNexAPI\\PulseNex\\PulseNex\\PulseNex.csproj": {}
   },
   "projects": {
-    "D:\\Github\\PulseNex\\PulseNexAPI\\PulseNex\\PulseNex\\PulseNex.csproj": {
+    "D:\\Git Projects\\My Projects\\PulseNex\\PulseNexAPI\\PulseNex\\PulseNex\\PulseNex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\PulseNex\\PulseNexAPI\\PulseNex\\PulseNex\\PulseNex.csproj",
+        "projectUniqueName": "D:\\Git Projects\\My Projects\\PulseNex\\PulseNexAPI\\PulseNex\\PulseNex\\PulseNex.csproj",
         "projectName": "PulseNex",
-        "projectPath": "D:\\Github\\PulseNex\\PulseNexAPI\\PulseNex\\PulseNex\\PulseNex.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\PulseNex\\PulseNexAPI\\PulseNex\\PulseNex\\obj\\",
+        "projectPath": "D:\\Git Projects\\My Projects\\PulseNex\\PulseNexAPI\\PulseNex\\PulseNex\\PulseNex.csproj",
+        "packagesPath": "C:\\Users\\rohan\\.nuget\\packages\\",
+        "outputPath": "D:\\Git Projects\\My Projects\\PulseNex\\PulseNexAPI\\PulseNex\\PulseNex\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rohan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
