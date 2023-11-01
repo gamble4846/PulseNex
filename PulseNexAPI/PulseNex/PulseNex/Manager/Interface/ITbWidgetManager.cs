@@ -8,5 +8,6 @@ namespace PulseNex.Manager.Interface
     {
         APIResponse Insert(tbWidgetInsertModel model);
         APIResponse Update(tbWidgetUpdateModel model, Guid WidgetGUID);
+        APIResponse Delete(Guid WidgetGUID);
     }
 }

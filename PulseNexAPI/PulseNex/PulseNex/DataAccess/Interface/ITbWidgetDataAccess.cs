@@ -6,5 +6,6 @@ namespace PulseNex.DataAccess.Interface
     {
         string Insert(tbWidgetInsertModel model);
         bool Update(tbWidgetUpdateModel model, Guid WidgetGUID);
+        bool Delete(Guid WidgetGUID);
     }
 }

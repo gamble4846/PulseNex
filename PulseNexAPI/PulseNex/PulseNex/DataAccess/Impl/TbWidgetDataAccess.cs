@@ -14,6 +14,7 @@ namespace PulseNex.DataAccess.Impl
 
         public string Insert(tbWidgetInsertModel model)
         {
+            SqLiteHelper.CreateTableIfDoesNotExists("tbWidget");
             var con = SqLiteHelper.GetSqLiteConnection();
             var cmd = SqLiteHelper.GetSqliteCommand(con);
             var NewID = Guid.NewGuid().ToString();
@@ -33,6 +34,7 @@ namespace PulseNex.DataAccess.Impl
 
         public bool Update(tbWidgetUpdateModel model, Guid WidgetGUID) 
         {
+            SqLiteHelper.CreateTableIfDoesNotExists("tbWidget");
             var con = SqLiteHelper.GetSqLiteConnection();
             var cmd = SqLiteHelper.GetSqliteCommand(con);
 
@@ -44,6 +46,24 @@ namespace PulseNex.DataAccess.Impl
 
             cmd.Parameters.AddWithValue("@GUIDWidget", WidgetGUID.ToString());
             cmd.Parameters.AddWithValue("@Name", model.Name);
+
+            var result = cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            con.Close();
+
+            if (result > 0)
+                return true;
+            return false;
+        }
+
+        public bool Delete(Guid WidgetGUID)
+        {
+            SqLiteHelper.CreateTableIfDoesNotExists("tbWidget");
+            var con = SqLiteHelper.GetSqLiteConnection();
+            var cmd = SqLiteHelper.GetSqliteCommand(con);
+
+            cmd.CommandText = @"DELETE FROM tbWidget WHERE GUIDWidget = @GUIDWidget;";
+            cmd.Parameters.AddWithValue("@GUIDWidget", WidgetGUID.ToString());
 
             var result = cmd.ExecuteNonQuery();
             cmd.Dispose();

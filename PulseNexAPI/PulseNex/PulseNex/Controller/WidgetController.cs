@@ -16,8 +16,8 @@ namespace PulseNex.Controller
         }
 
         [HttpPost]
-        [Route("Widget/AddDefaultWidget")]
-        public ActionResult AddDefaultWidget(tbWidgetInsertModel model)
+        [Route("Widget/AddDefault")]
+        public ActionResult AddDefault(tbWidgetInsertModel model)
         {
             try
             {
@@ -30,12 +30,26 @@ namespace PulseNex.Controller
         }
 
         [HttpPost]
-        [Route("Widget/UpdateWidget")]
-        public ActionResult UpdateWidget(tbWidgetUpdateModel model, Guid WidgetGUID)
+        [Route("Widget/Update")]
+        public ActionResult Update(tbWidgetUpdateModel model, Guid WidgetGUID)
         {
             try
             {
                 return Ok(_tbWidgetManager.Update(model, WidgetGUID));
+            }
+            catch (Exception ex)
+            {
+                return Ok(new APIResponse(APIResponse.ResponseCode.ERROR, ex.Message, ex));
+            }
+        }
+
+        [HttpDelete]
+        [Route("Widget/Delete")]
+        public ActionResult Delete(Guid WidgetGUID)
+        {
+            try
+            {
+                return Ok(_tbWidgetManager.Delete(WidgetGUID));
             }
             catch (Exception ex)
             {

@@ -38,5 +38,18 @@ namespace PulseNex.Manager.Impl
                 return new APIResponse(APIResponse.ResponseCode.SUCCESS, "Widget Updated", WidgetGUID);
             }
         }
+
+        public APIResponse Delete(Guid WidgetGUID)
+        {
+            var Deleted = _tbWidgetDataAccess.Delete(WidgetGUID);
+            if (!Deleted)
+            {
+                return new APIResponse(APIResponse.ResponseCode.ERROR, "Error Deleting Widget", WidgetGUID);
+            }
+            else
+            {
+                return new APIResponse(APIResponse.ResponseCode.SUCCESS, "Widget Deleted", WidgetGUID);
+            }
+        }
     }
 }
