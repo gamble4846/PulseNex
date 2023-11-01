@@ -9,6 +9,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Security.Cryptography;
+using System.Security.Principal;
 using System.Text;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -100,6 +101,24 @@ namespace PulseNex.Helpers
                 signingCredentials: credentials);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        public static bool ValidateToken(string token)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var validationParameters = new TokenValidationParameters()
+            {
+                ValidateLifetime = false,
+                ValidateAudience = false,
+                ValidateIssuer = false,  
+                ValidIssuer = MainClass.GetAppSettingsData().Jwt.ValidIssuer,
+                ValidAudience = MainClass.GetAppSettingsData().Jwt.ValidAudience,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(MainClass.GetAppSettingsData().Jwt.Secret))
+            };
+
+            SecurityToken validatedToken;
+            IPrincipal principal = tokenHandler.ValidateToken(token, validationParameters, out validatedToken);
+            return true;
         }
     }
 }

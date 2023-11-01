@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PulseNex.ActionFilters;
 using PulseNex.Helpers;
 using PulseNex.Main;
 
 namespace PulseNex.Controller
 {
+    [FullAuthorization]
     public class TestController : BaseController
     {
         public TestController()

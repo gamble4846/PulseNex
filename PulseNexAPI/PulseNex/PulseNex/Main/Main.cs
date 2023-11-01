@@ -9,6 +9,7 @@ namespace PulseNex.Main
         private static AppSettingsModel AppSettingsData { get; set; }
         public static void AddDependencies(IServiceCollection Service)
         {
+            Service.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
         }
 
