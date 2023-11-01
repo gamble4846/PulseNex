@@ -18,6 +18,7 @@ namespace PulseNex.Controller
         {
             try
             {
+                SqLiteHelper.CreateTableIfDoesNotExists("tbWidget");
                 return Ok(MainClass.GetAppSettingsData());
             }
             catch (Exception ex)

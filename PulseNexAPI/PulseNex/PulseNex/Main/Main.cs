@@ -1,5 +1,9 @@
 ﻿using Newtonsoft.Json;
+using PulseNex.DataAccess.Impl;
+using PulseNex.DataAccess.Interface;
 using PulseNex.Helpers;
+using PulseNex.Manager.Impl;
+using PulseNex.Manager.Interface;
 using PulseNex.Model;
 
 namespace PulseNex.Main
@@ -11,6 +15,8 @@ namespace PulseNex.Main
         {
             Service.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+            Service.AddTransient<ITbWidgetManager, TbWidgetManager>();
+            Service.AddTransient<ITbWidgetDataAccess, TbWidgetDataAccess>();
         }
 
         public static AppSettingsModel UpdateAppSettingsData()

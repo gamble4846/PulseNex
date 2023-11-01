@@ -46,5 +46,19 @@ namespace PulseNex.Helpers
             }
             return loginDataLocation;
         }
+
+        public static string GetSqLiteFileLocation()
+        {
+            string sqLiteFileLocation = "";
+            if (CommonHelper.IsDebug())
+            {
+                sqLiteFileLocation = "D:/Git Projects/My Projects/PulseNex/PulseNexAPI/PulseNex/PulseNex/ConfigFiles/Database.db";
+            }
+            else
+            {
+                sqLiteFileLocation = "/app/ConfigFiles/Database.db";
+            }
+            return sqLiteFileLocation;
+        }
     }
 }
