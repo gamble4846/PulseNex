@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PulseNex.Helpers;
+using PulseNex.Main;
 
 namespace PulseNex.Controller
 {
@@ -15,7 +16,7 @@ namespace PulseNex.Controller
         {
             try
             {
-                return Ok(CommonService.GetAppSettings());
+                return Ok(MainClass.GetAppSettingsData());
             }
             catch (Exception ex)
             {

@@ -18,27 +18,5 @@ namespace PulseNex.Helpers
                 return false;
             #endif
         }
-
-        public static AppSettingsModel GetAppSettings()
-        {
-            AppSettingsModel model = new AppSettingsModel();
-            var appSettingsLocation = "";
-
-            if (IsDebug())
-            {
-                appSettingsLocation = "D:/Git Projects/My Projects/PulseNex/PulseNexAPI/PulseNex/PulseNex/ConfigFiles/appsettings.json";
-            }
-            else
-            {
-                appSettingsLocation = "/app/ConfigFiles/appsettings.json";
-            }
-
-            bool flag = File.Exists(appSettingsLocation);
-            string contents = File.ReadAllText(appSettingsLocation);
-
-            model = JsonConvert.DeserializeObject<AppSettingsModel>(contents);
-
-            return model;
-        }
     }
 }

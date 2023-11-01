@@ -4,7 +4,8 @@ using System.Reflection;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-Main.AddDependencies(builder.Services);
+MainClass.AddDependencies(builder.Services);
+MainClass.UpdateAppSettingsData();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
