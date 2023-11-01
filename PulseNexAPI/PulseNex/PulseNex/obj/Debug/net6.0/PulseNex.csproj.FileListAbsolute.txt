@@ -61,8 +61,6 @@ D:\Git Projects\My Projects\PulseNex\PulseNexAPI\PulseNex\PulseNex\obj\Debug\net
 D:\Git Projects\My Projects\PulseNex\PulseNexAPI\PulseNex\PulseNex\obj\Debug\net6.0\PulseNex.genruntimeconfig.cache
 D:\Git Projects\My Projects\PulseNex\PulseNexAPI\PulseNex\PulseNex\obj\Debug\net6.0\ref\PulseNex.dll
 D:\Git Projects\My Projects\PulseNex\PulseNexAPI\PulseNex\PulseNex\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\Git Projects\My Projects\PulseNex\PulseNexAPI\PulseNex\PulseNex\bin\Debug\net6.0\Layers.dll
-D:\Git Projects\My Projects\PulseNex\PulseNexAPI\PulseNex\PulseNex\bin\Debug\net6.0\Layers.pdb
 D:\Git Projects\My Projects\PulseNex\PulseNexAPI\PulseNex\PulseNex\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Git Projects\My Projects\PulseNex\PulseNexAPI\PulseNex\PulseNex\bin\Debug\net6.0\Azure.Core.dll
 D:\Git Projects\My Projects\PulseNex\PulseNexAPI\PulseNex\PulseNex\bin\Debug\net6.0\Azure.Identity.dll

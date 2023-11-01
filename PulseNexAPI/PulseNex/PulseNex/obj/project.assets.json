@@ -3999,34 +3999,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
-      },
-      "Layers/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "EasyCrudLibrary": "1.0.13",
-          "FastMember": "1.5.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.13",
-          "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
-          "Microsoft.AspNetCore.Http.Abstractions": "2.1.1",
-          "Microsoft.EntityFrameworkCore": "7.0.9",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.9",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
-          "Microsoft.Extensions.Logging.Log4Net.AspNetCore": "6.1.0",
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.18.1",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.11",
-          "Newtonsoft.Json": "13.0.3",
-          "Swashbuckle.AspNetCore": "6.5.0",
-          "System.Data.SqlClient": "4.8.5",
-          "System.IdentityModel.Tokens.Jwt": "6.32.0",
-          "ini-parser": "2.5.2"
-        },
-        "compile": {
-          "bin/placeholder/Layers.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Layers.dll": {}
-        }
       }
     }
   },
@@ -11501,18 +11473,12 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
-    },
-    "Layers/1.0.0": {
-      "type": "project",
-      "path": "../Layers/Layers.csproj",
-      "msbuildProject": "../Layers/Layers.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "EasyCrudLibrary >= 1.0.13",
       "FastMember >= 1.5.0",
-      "Layers >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.13",
       "Microsoft.AspNetCore.Hosting.Abstractions >= 2.1.1",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.1.1",
@@ -11555,11 +11521,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "D:\\Git Projects\\My Projects\\PulseNex\\PulseNexAPI\\PulseNex\\Layers\\Layers.csproj": {
-              "projectPath": "D:\\Git Projects\\My Projects\\PulseNex\\PulseNexAPI\\PulseNex\\Layers\\Layers.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

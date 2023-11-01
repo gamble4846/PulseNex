@@ -10,7 +10,6 @@
         "dependencies": {
           "EasyCrudLibrary": "1.0.13",
           "FastMember": "1.5.0",
-          "Layers": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.13",
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
           "Microsoft.AspNetCore.Http.Abstractions": "2.1.1",
@@ -2590,29 +2589,6 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
-      },
-      "Layers/1.0.0": {
-        "dependencies": {
-          "EasyCrudLibrary": "1.0.13",
-          "FastMember": "1.5.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.13",
-          "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
-          "Microsoft.AspNetCore.Http.Abstractions": "2.1.1",
-          "Microsoft.EntityFrameworkCore": "7.0.9",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.9",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
-          "Microsoft.Extensions.Logging.Log4Net.AspNetCore": "6.1.0",
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.18.1",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.11",
-          "Newtonsoft.Json": "13.0.3",
-          "Swashbuckle.AspNetCore": "6.5.0",
-          "System.Data.SqlClient": "4.8.5",
-          "System.IdentityModel.Tokens.Jwt": "6.32.0",
-          "ini-parser": "2.5.2"
-        },
-        "runtime": {
-          "Layers.dll": {}
-        }
       }
     }
   },
@@ -4042,11 +4018,6 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
-    },
-    "Layers/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }

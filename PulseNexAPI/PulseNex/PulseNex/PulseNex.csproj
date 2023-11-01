@@ -28,11 +28,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Layers\Layers.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="ConfigFiles\" />
+    <Folder Include="DataAccess\Impl\" />
+    <Folder Include="DataAccess\Interface\" />
+    <Folder Include="Manager\Impl\" />
+    <Folder Include="Manager\Interface\" />
   </ItemGroup>
 
 </Project>
