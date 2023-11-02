@@ -54,7 +54,13 @@ namespace PulseNex.Helpers
             switch(TableName) 
             {
                 case "tbWidget":
-                    return @"CREATE TABLE tbWidget(GUIDWidget TEXT PRIMARY KEY,Name TEXT)";
+                    return @"
+                    CREATE TABLE tbWidget(
+                        GUIDWidget TEXT PRIMARY KEY,
+                        Name TEXT, 
+                        Color TEXT, 
+                        ImageId TEXT
+                    )";
                 default:
                     throw new Exception("Table Name Not Found " + TableName);
             }

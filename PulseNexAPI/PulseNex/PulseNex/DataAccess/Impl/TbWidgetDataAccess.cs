@@ -19,9 +19,11 @@ namespace PulseNex.DataAccess.Impl
             var cmd = SqLiteHelper.GetSqliteCommand(con);
             var NewID = Guid.NewGuid().ToString();
 
-            cmd.CommandText = "INSERT INTO tbWidget(GUIDWidget, Name) VALUES(@GUIDWidget,@Name)";
+            cmd.CommandText = "INSERT INTO tbWidget(GUIDWidget, Name, Color, ImageId) VALUES(@GUIDWidget,@Name,@Color,@ImageId)";
             cmd.Parameters.AddWithValue("@GUIDWidget", NewID);
             cmd.Parameters.AddWithValue("@Name", model.Name);
+            cmd.Parameters.AddWithValue("@Color", model.Color);
+            cmd.Parameters.AddWithValue("@ImageId", model.ImageId);
 
             var result = cmd.ExecuteNonQuery();
             cmd.Dispose();
